@@ -34,24 +34,19 @@ class Index extends Component {
   }
   
   render() {
-    var me = this;
-    AlertIOS.alert(
-     '网络出错',
-     '请重试'
-    );
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
-          Welcome to Index Page!
+          网点管理
         </Text>
         <Text style={styles.welcome}>
-          Welcome to Index Page!
+          技师管理
         </Text>
         <Text style={styles.welcome}>
-          Welcome to Index Page!
+          工单管理
         </Text>
         <Text style={styles.welcome}>
-          Welcome to Index Page!
+          我的工单
         </Text>
       </View>
     );

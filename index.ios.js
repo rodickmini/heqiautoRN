@@ -23,9 +23,12 @@ const propTypes = {
 
 class HelloPage extends React.Component {
   constructor(props) {
-      super(props);
+    super(props);
 
-      this.indexPage = this.indexPage.bind(this);
+    this.indexPage = this.indexPage.bind(this);
+    setTimeout(()=>{
+      this.indexPage();
+    }, 1000)
   }
 
   indexPage() {
@@ -40,11 +43,9 @@ class HelloPage extends React.Component {
       <View style={styles.container}>
         <Image source={require('./assets/image/logo.png')} style={styles.logo}/>
         <Text style={styles.slogan}>让养车更简单</Text>
-        <TouchableHighlight onPress={this.indexPage} underlayColor="transparent" style={styles.enterBtn}>
-          <Text>进入BP系统</Text>
-        </TouchableHighlight>
       </View>
     );
+    
   }
 }
 
